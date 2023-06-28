@@ -1,0 +1,34 @@
+{
+    "name": "@jensonpaul/sage-api",
+    "version": "0.0.8",
+    "description": "Sage API Wrapper",
+    "types": "types/sage.d.ts",
+    "exports": "./dist/sage.js",
+    "engines": {
+        "node": ">=12",
+        "npm": ">=6"
+    },
+    "scripts": {
+        "build": "rimraf dist && rimraf types && tsc && esbuild src/sage.ts --bundle --minify --legal-comments=none --platform=node --outfile=dist/sage.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jensonpaul/sage-api.git"
+    },
+    "author": "Ansell Cruz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jensonpaul/sage-api/issues"
+    },
+    "homepage": "https://github.com/jensonpaul/sage-api#readme",
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "esbuild": "^0.14.47",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.7.4"
+    },
+    "keywords": [
+        "sage",
+        "accounting"
+    ]
+}
